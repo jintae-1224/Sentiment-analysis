@@ -52,3 +52,10 @@ Dense, 활성화함수 = sigmoid
 ### fit
 
 epochs=10, batch_size=512
+
+### result
+
+loss = 0.41581645607948303
+binary_accuracyv = 0.8514800071716309
+
+
