@@ -86,7 +86,7 @@ results = model.evaluate(x_test, y_test)
 
 print(results)
 
-model.save('movie_review_model.h5')
+model.save('nsmc_model.h5')
 
 review = "아주 재미 있어요"
 token = tokenize(review)
@@ -106,7 +106,7 @@ def predict_review(review):
     else:
         print(f"{review} ==> 부정 ({round((1-score)*100)}%)")
 
-list = ['홍준표','이재명']
+list = ['진짜 영화 왜 이모양이냐','한 번보는걸로 만족이 안됨']
 
 for i in range(len(list)):
     predict_review(list[i])
