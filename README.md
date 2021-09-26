@@ -15,4 +15,26 @@ ex)
 
 긍정 => 1 , 부정 => 0
 
-## 2. 형태소 분석
+## 2. Data Preprocessing
+
+### Okt를 이용하여 형태소와 품사 분석
+
+from konlpy.tag import Okt 
+okt = Okt()
+
+okt.pos(doc, norm=True, stem=True)
+
+=> input : 아버지가방에들어가신다
+   output : ['아버지/Noun', '가방/Noun', '에/Josa', '들어가다/Verb']
+   
+### nltk를 이용한 전처리
+
+import nltk
+text = nltk.Text(tokens, name='NMSC')
+
+### Data vectorization
+
+used CountVectorizer
+=> 단어들의 카운트로 여러문서를 벡터화
+
+## 3. Data Modeling
