@@ -38,3 +38,17 @@ used CountVectorizer
 => 단어들의 카운트로 여러문서를 벡터화
 
 ## 3. Data Modeling
+
+### Layer
+
+Dense, unit=64, 활성화함수=relu
+Dense, unit=64, 활성화함수=relu
+Dense, 활성화함수 = sigmoid
+
+### Compile
+
+손실함수=binary_crossentropy , RMSprop optimizer를 통한 경사하강법
+
+### fit
+
+epochs=10, batch_size=512
